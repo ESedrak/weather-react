@@ -7,7 +7,7 @@ export default function Footer() {
       {" "}
       <footer>
         <a
-          href="https://github.com/ESedrak/Weather-App"
+          href="https://github.com/ESedrak/weather-react"
           target="_blank"
           rel="noreferrer"
         >

@@ -1,0 +1,34 @@
+.extra-info {
+  opacity: 0.8;
+  font-size: 15px;
+}
+
+.last-updated-time {
+  opacity: 0.6;
+  font-size: 10px;
+  text-align: center;
+  display: block;
+}
+
+.temperature {
+  font-size: 15px;
+}
+
+.today-info {
+  padding: 20px;
+  border: 2px solid rgb(247, 206, 230);
+  border-radius: 15px;
+  box-shadow: 4px 6px 12px black;
+}
+
+.today-temperature {
+  font-size: 70px;
+}
+
+.temperature-units {
+  text-align: center;
+}
+.units {
+  position: relative;
+  top: -38px;
+}

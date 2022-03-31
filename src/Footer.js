@@ -1,0 +1,19 @@
+import React from "react";
+import "./Footer.css";
+
+export default function Footer() {
+  return (
+    <div className="Footer">
+      {" "}
+      <footer>
+        <a
+          href="https://github.com/ESedrak/Weather-App"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Open Source Code by Elizabeth Sedrak
+        </a>
+      </footer>{" "}
+    </div>
+  );
+}

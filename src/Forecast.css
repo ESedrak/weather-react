@@ -1,0 +1,23 @@
+.Forecast {
+  border: 2px solid rgb(247, 206, 230);
+  border-radius: 15px;
+  box-shadow: 4px 6px 12px black;
+  padding: 20px;
+  text-align: center;
+}
+
+.weather-forecast-date {
+  opacity: 0.9;
+  font-size: 15px;
+}
+
+.weather-forecast-temperatures {
+  font-size: 10px;
+}
+
+.weather-forecast-temperature-max {
+  opacity: 0.8;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.6;
+}

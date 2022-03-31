@@ -1,21 +1,22 @@
 import React from "react";
-import axios from "axios";
+import "./Weather.css";
+import Search from "./Search";
+import Today from "./Today";
+import Forecast from "./Forecast";
+import Footer from "./Footer";
 
-export default function Weather(props) {
-  function showWeather(response) {
-    alert(
-      `This is a test to show the weather temperature (${Math.round(
-        response.data.main.temp
-      )} degrees celsius) in ${props.city}`
-    );
-  }
-  let apiKey = "2fe015e63630ed57d2ca7047e4ab4479";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=metric`;
-
-  axios.get(apiUrl).then(showWeather);
+export default function Weather() {
   return (
-    <div>
-      <h3>Testing App</h3>
+    <div className="Weather">
+      <div className="today-info">
+        <Search />
+        <Today />
+      </div>
+      <br />
+      <div className="Forecast">
+        <Forecast />
+      </div>
+      <Footer />
     </div>
   );
 }

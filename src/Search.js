@@ -11,7 +11,9 @@ export default function Search() {
 
   function handleSearch(event) {
     event.preventDefault();
-    setMessage(`It is currentlty 20 degrees in ${city}`);
+    setMessage(
+      `This is a test to make sure the button is working correctly for ${city}`
+    );
   }
 
   return (

@@ -7,14 +7,16 @@ import Footer from "./Footer";
 
 function App() {
   return (
-    <div className="Weather">
-      <div className="today-info">
-        <Search />
-        <Today />
-      </div>
-      <br />
-      <div className="Forecast">
-        <Forecast />
+    <div className="App">
+      <div className="Weather">
+        <div className="today-info">
+          <Search />
+          <Today />
+        </div>
+        <br />
+        <div className="Forecast">
+          <Forecast />
+        </div>
       </div>
       <Footer />
     </div>

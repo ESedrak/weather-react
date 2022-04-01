@@ -1,25 +1,27 @@
 import React from "react";
 import "./Today.css";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 export default function Today() {
   return (
     <div className="Today">
       <h1> City</h1>
-      <div className="row">
-        <div className="col-3">
-          <div className="temperature-units">
-            <img
-              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/896/original/StockWeatherImage.png?1646862957"
-              alt="Stock weather icon"
-              className="weather-icon"
-            />
+      <Row>
+        <Col sm={3}>
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/896/original/StockWeatherImage.png?1646862957"
+            alt="Stock weather icon"
+            className="weather-icon"
+          />
+        </Col>
+        <Col sm={5}>
+          <div className="today-temperature-units">
+            <span className="today-temperature">0 </span>
+            <span className="units"> °C </span>
           </div>
-        </div>
-        <div className="col-5 temperature-units">
-          <span className="today-temperature">0 </span>
-          <span className="units"> °C </span>
-        </div>
-        <div className="col-4">
+        </Col>
+        <Col sm={4}>
           <ul className="extra-info">
             <li>
               <span>Description: </span>
@@ -31,8 +33,8 @@ export default function Today() {
               Wind: <span>0</span> km/h
             </li>
           </ul>
-        </div>
-      </div>
+        </Col>
+      </Row>
       <span className="last-updated-time">
         Last Updated: <span> Todays Time</span>
       </span>

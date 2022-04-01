@@ -16,7 +16,7 @@ export default function Today() {
           />
         </Col>
         <Col sm={5}>
-          <div className="today-temperature-units">
+          <div className="temperature-units">
             <span className="today-temperature">0 </span>
             <span className="units"> °C </span>
           </div>

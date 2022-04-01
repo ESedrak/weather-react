@@ -25,12 +25,16 @@
   font-size: 70px;
 }
 
+.today-temperature-units {
+  text-align: center;
+  display: block;
+}
 .units {
   position: relative;
   top: -38px;
 }
 
-.today-temperature-units {
-  text-align: center;
-  display: block;
+.weather-icon {
+  height: 105px;
+  width: 100px;
 }

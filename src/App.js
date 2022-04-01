@@ -5,7 +5,7 @@ import Today from "./Today";
 import Forecast from "./Forecast";
 import Footer from "./Footer";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <div className="Weather">
@@ -22,5 +22,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

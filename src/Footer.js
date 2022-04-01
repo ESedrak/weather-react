@@ -9,7 +9,7 @@ export default function Footer() {
         <a
           href="https://github.com/ESedrak/weather-react"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           Open Source Code by Elizabeth Sedrak
         </a>

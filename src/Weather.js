@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
+import ReactAnimatedWeather from "react-animated-weather";
+import FormatDate from "./FormatDate";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -14,6 +16,7 @@ export default function Weather(props) {
       city: response.data.name,
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
+      date: new Date(response.data.dt * 1000),
       iconUrl:
         "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/896/original/StockWeatherImage.png?1646862957",
     });
@@ -64,7 +67,8 @@ export default function Weather(props) {
             </div>
           </div>
           <span className="last-updated-time">
-            Last Updated: <span> Todays Time </span>
+            Last Updated:
+            <FormatDate date={weatherData.date} />
           </span>
         </div>
       </div>
@@ -74,6 +78,16 @@ export default function Weather(props) {
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(showWeather);
 
-    return "Loading";
+    return (
+      <div>
+        <p>Loading....</p>
+        <ReactAnimatedWeather
+          icon="PARTLY_CLOUDY_DAY"
+          color="white"
+          size={40}
+          animate={true}
+        />
+      </div>
+    );
   }
 }

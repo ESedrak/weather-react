@@ -12,9 +12,7 @@ export default function App() {
           <Weather defaultCity="Sydney" />
         </div>
         <br />
-        <div className="Forecast">
-          <Forecast />
-        </div>
+        <Forecast />
       </div>
       <Footer />
     </div>

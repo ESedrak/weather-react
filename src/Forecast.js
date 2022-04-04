@@ -2,5 +2,5 @@ import React from "react";
 import "./Forecast.css";
 
 export default function Forecast() {
-  return <div>Forecast</div>;
+  return <div className="Forecast">Forecast</div>;
 }

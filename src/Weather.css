@@ -1,3 +1,27 @@
+.btn {
+  box-shadow: 4px 2px 15px black;
+}
+
+.current-location {
+  background-color: #13153a;
+  border-color: white;
+  border-radius: solid;
+  box-shadow: 4px 2px 15px black;
+}
+
+.current-location:hover {
+  transition-delay: 2ms;
+  background: white;
+  color: black;
+  border-color: black;
+  border-radius: 2px solid #6e7080;
+}
+
+.current-location:active {
+  border-color: #6e7080;
+  box-shadow: -3px -3px 2px #6e7080, 3px 3px 2px #6e7080;
+}
+
 .extra-info {
   opacity: 0.8;
   font-size: 15px;

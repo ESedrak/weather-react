@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
-import Search from "./Search";
-import Today from "./Today";
+import Weather from "./Weather";
 import Forecast from "./Forecast";
 import Footer from "./Footer";
 
@@ -10,8 +9,7 @@ export default function App() {
     <div className="App">
       <div className="Weather">
         <div className="today-info">
-          <Search />
-          <Today />
+          <Weather defaultCity="Sydney" />
         </div>
         <br />
         <div className="Forecast">

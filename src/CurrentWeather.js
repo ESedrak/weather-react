@@ -8,7 +8,7 @@ export default function CurrentWeather(props) {
       <div className="row">
         <div className="col-3">
           <img
-            src={props.data.iconUrl}
+            src={props.data.icon}
             alt={props.data.description}
             className="weather-icon"
           />

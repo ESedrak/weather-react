@@ -68,7 +68,7 @@ export default function Weather(props) {
         <p>Loading....</p>
         <ReactAnimatedWeather
           icon="PARTLY_CLOUDY_DAY"
-          color="white"
+          color="pink"
           size={40}
           animate={true}
         />

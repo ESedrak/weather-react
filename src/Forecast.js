@@ -1,32 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Forecast.css";
-import WeatherIcon from "./WeatherIcon";
 import axios from "axios";
+import ForecastData from "./ForecastData";
 
 export default function Forecast(props) {
+  const [ready, setReady] = useState(false);
+  const [forecast, setForecast] = useState("");
+
   function showForecast(response) {
-    console.log(response.data);
+    setForecast(response.data.daily);
+    setReady(true);
   }
 
-  let latitude = props.coordinates.lat;
-  let longitude = props.coordinates.lon;
-  let apiKey = "2fe015e63630ed57d2ca7047e4ab4479";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
-
-  axios.get(apiUrl).then(showForecast);
-
-  return (
-    <div className="Forecast">
-      <div className="row">
-        <div className="col-2">
-          <div className="Forecast-day">Day</div>
-          <WeatherIcon code="01d" size={40} />
-          <div className="Forecast-temperatures">
-            <span className="Forecast-temperature-min">Min°C</span>
-            <span className="Forecast-temperature-max">Max°C</span>
+  if (ready) {
+    return (
+      <div className="Forecast">
+        <div className="row">
+          <div className="col-2">
+            <ForecastData data={forecast[0]} />
           </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  } else {
+    let latitude = props.coordinates.lat;
+    let longitude = props.coordinates.lon;
+    let apiKey = "2fe015e63630ed57d2ca7047e4ab4479";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+
+    axios.get(apiUrl).then(showForecast);
+
+    return null;
+  }
 }

@@ -33,10 +33,10 @@ export default function TemperatureUnits(props) {
       <div className="today-temperature-units">
         <span className="today-temperature">{fahrenheit()}</span>
         <span className="units">
+          <strong> °F</strong> |{" "}
           <a href="/" onClick={showCelsius}>
             °C
-          </a>{" "}
-          |<strong> °F</strong>
+          </a>
         </span>
       </div>
     );

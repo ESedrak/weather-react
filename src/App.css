@@ -32,7 +32,7 @@ ul {
 
 .Weather {
   padding: 20px;
-  margin: 20px auto;
+  margin: 20px auto 0px;
   max-width: 450px;
   border: 2px solid rgb(247, 206, 230);
   border-radius: 15px;

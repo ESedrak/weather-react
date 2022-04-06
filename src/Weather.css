@@ -25,6 +25,7 @@
 .extra-info {
   opacity: 0.8;
   font-size: 15px;
+  text-transform: capitalize;
 }
 
 .last-updated-time {
@@ -58,7 +59,16 @@
   top: -38px;
 }
 
-.weather-icon {
-  height: 105px;
-  width: 100px;
+.Weather {
+  padding: 20px;
+  margin: 20px auto 0px;
+  max-width: 450px;
+  border: 2px solid rgb(247, 206, 230);
+  border-radius: 15px;
+  background: linear-gradient(
+    153deg,
+    rgb(20, 19, 19),
+    #13174e 43%,
+    rgb(20, 19, 19)
+  );
 }

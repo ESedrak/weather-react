@@ -6,18 +6,18 @@
   text-align: center;
 }
 
-.weather-forecast-date {
+.Forecast-day {
   opacity: 0.9;
   font-size: 15px;
 }
 
-.weather-forecast-temperatures {
+.Forecast-temperatures {
   font-size: 10px;
 }
 
-.weather-forecast-temperature-max {
+.Forecast-temperature-max {
   opacity: 0.8;
 }
-.weather-forecast-temperature-min {
+.Forecast-temperature-min {
   opacity: 0.6;
 }

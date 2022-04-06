@@ -3,6 +3,7 @@ import axios from "axios";
 import "./Weather.css";
 import ReactAnimatedWeather from "react-animated-weather";
 import CurrentWeather from "./CurrentWeather";
+import Forecast from "./Forecast";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -12,6 +13,7 @@ export default function Weather(props) {
     console.log(response);
     setWeatherData({
       ready: true,
+      coordinates: response.data.coord,
       temperature: Math.round(response.data.main.temp),
       wind: Math.round(response.data.wind.speed),
       city: response.data.name,
@@ -39,33 +41,39 @@ export default function Weather(props) {
 
   if (weatherData.ready) {
     return (
-      <div className="Search">
-        <nav className="navbar nav-bar-dark">
-          <form className="d-flex" onSubmit={showSearch}>
-            <input
-              className="form-control me-2 w-100"
-              type="search"
-              placeholder="City"
-              autoComplete="off"
-              autoFocus="on"
-              onChange={showCityChange}
-            />
-            <button className="btn btn-outline-light " type="submit">
-              Search
-            </button>
-            <button type="button" className="btn btn-dark current-location">
-              Current
-            </button>
-          </form>
-        </nav>
-        <CurrentWeather data={weatherData} />
+      <div className="Weather">
+        <div className="today-info">
+          <div className="Search">
+            <nav className="navbar nav-bar-dark">
+              <form className="d-flex" onSubmit={showSearch}>
+                <input
+                  className="form-control me-2 w-100"
+                  type="search"
+                  placeholder="City"
+                  autoComplete="off"
+                  autoFocus="on"
+                  onChange={showCityChange}
+                />
+                <button className="btn btn-outline-light " type="submit">
+                  Search
+                </button>
+                <button type="button" className="btn btn-dark current-location">
+                  Current
+                </button>
+              </form>
+            </nav>
+          </div>
+          <CurrentWeather data={weatherData} />
+        </div>
+        <br />
+        <Forecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {
     search();
     return (
       <div>
-        <p>Loading....</p>
+        <p>Loading, please wait</p>
         <ReactAnimatedWeather
           icon="PARTLY_CLOUDY_DAY"
           color="pink"

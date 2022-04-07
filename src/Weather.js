@@ -62,7 +62,6 @@ export default function Weather(props) {
                 </div>
               </div>
             </form>
-
             <CurrentWeather data={weatherData} />
           </div>
         </div>
@@ -77,7 +76,7 @@ export default function Weather(props) {
         <p>Loading, please wait</p>
         <ReactAnimatedWeather
           icon="PARTLY_CLOUDY_DAY"
-          color="pink"
+          color="rgb(247, 206, 230)"
           size={40}
           animate={true}
         />

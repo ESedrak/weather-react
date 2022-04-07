@@ -47,7 +47,7 @@ export default function Weather(props) {
               <div className="row">
                 <div className="col-8">
                   <input
-                    className="form-control"
+                    className="form-control mw-100"
                     type="search"
                     placeholder="City"
                     autoComplete="off"
@@ -55,7 +55,7 @@ export default function Weather(props) {
                     onChange={showCityChange}
                   />
                 </div>
-                <div className="col-4">
+                <div className="col-4 ">
                   <button className="btn btn-outline-light " type="submit">
                     Search
                   </button>

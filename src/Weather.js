@@ -43,26 +43,28 @@ export default function Weather(props) {
       <div className="Weather">
         <div className="today-info">
           <div className="Search">
-            <nav className="navbar nav-bar-dark">
-              <form className="d-flex" onSubmit={showSearch}>
-                <input
-                  className="form-control me-2 w-100"
-                  type="search"
-                  placeholder="City"
-                  autoComplete="off"
-                  autoFocus="on"
-                  onChange={showCityChange}
-                />
-                <button className="btn btn-outline-light " type="submit">
-                  Search
-                </button>
-                <button type="button" className="btn btn-dark current-location">
-                  Current
-                </button>
-              </form>
-            </nav>
+            <form onSubmit={showSearch}>
+              <div className="row">
+                <div className="col-8">
+                  <input
+                    className="form-control"
+                    type="search"
+                    placeholder="City"
+                    autoComplete="off"
+                    autoFocus="on"
+                    onChange={showCityChange}
+                  />
+                </div>
+                <div className="col-4">
+                  <button className="btn btn-outline-light " type="submit">
+                    Search
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <CurrentWeather data={weatherData} />
           </div>
-          <CurrentWeather data={weatherData} />
         </div>
         <br />
         <Forecast coordinates={weatherData.coordinates} />

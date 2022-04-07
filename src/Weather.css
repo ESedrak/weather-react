@@ -37,7 +37,8 @@
 
 .today-temperature-units {
   text-align: center;
-  display: block;
+  position: relative;
+  top: -10px;
 }
 .units {
   position: relative;

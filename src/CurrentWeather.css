@@ -1,0 +1,31 @@
+.temperature {
+  font-size: 15px;
+}
+
+.CurrentWeather-todayTemperatureUnits {
+  text-align: center;
+  position: relative;
+  top: -10px;
+}
+
+.CurrentWeather-todayTemperature {
+  font-size: 65px;
+}
+
+.CurrentWeather-extraInfo {
+  opacity: 0.8;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.CurrentWeather-time {
+  opacity: 0.6;
+  font-size: 10px;
+  text-align: center;
+  display: block;
+}
+
+.CurrentWeather-units {
+  position: relative;
+  top: -38px;
+}

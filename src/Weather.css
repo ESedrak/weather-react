@@ -22,38 +22,11 @@
   margin-left: 10px;
 }
 
-.extra-info {
-  opacity: 0.8;
-  font-size: 15px;
-  text-transform: capitalize;
-}
-
-.last-updated-time {
-  opacity: 0.6;
-  font-size: 10px;
-  text-align: center;
-  display: block;
-}
-
-.temperature {
-  font-size: 15px;
-}
-
 .Weather-todayInfo {
   padding: 20px;
   border: 2px solid rgb(247, 206, 230);
   border-radius: 15px;
   box-shadow: 4px 6px 12px black;
-}
-
-.today-temperature {
-  font-size: 65px;
-}
-
-.today-temperature-units {
-  text-align: center;
-  position: relative;
-  top: -10px;
 }
 
 .units {

@@ -12,6 +12,14 @@
   );
 }
 
+/* First section/box of app */
+.Weather-todayInfo {
+  padding: 20px;
+  border: 2px solid rgb(247, 206, 230);
+  border-radius: 15px;
+  box-shadow: 4px 6px 12px black;
+}
+
 /* Button */
 .Weather-btn {
   box-shadow: 4px 2px 15px black;
@@ -20,16 +28,4 @@
 /* SearchBar */
 .Weather-form {
   margin-left: 10px;
-}
-
-.Weather-todayInfo {
-  padding: 20px;
-  border: 2px solid rgb(247, 206, 230);
-  border-radius: 15px;
-  box-shadow: 4px 6px 12px black;
-}
-
-.units {
-  position: relative;
-  top: -38px;
 }

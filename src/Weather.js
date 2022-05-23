@@ -46,8 +46,8 @@ const Weather = (props) => {
       <div className="Weather">
         <div className="Weather-todayInfo">
           <form onSubmit={showSearch}>
-            <div className="Weather-row row">
-              <div className="Weather-col col-8">
+            <div className=" row">
+              <div className="col-8">
                 <input
                   className="Weather-form form-control mw-100"
                   type="search"
@@ -57,9 +57,9 @@ const Weather = (props) => {
                   onChange={showCityChange}
                 />
               </div>
-              <div className="Weather-col col-4 ">
+              <div className="col-4 ">
                 <button
-                  className=" Weather-btn btn btn-outline-light "
+                  className="Weather-btn btn btn-outline-light "
                   type="submit"
                 >
                   Search

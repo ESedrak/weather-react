@@ -1,4 +1,4 @@
-export default function FormateDate(props) {
+const FormatDate = (props) => {
   let days = [
     "Sunday",
     "Monday",
@@ -18,4 +18,6 @@ export default function FormateDate(props) {
     minutes = `0${minutes}`;
   }
   return `${day}, ${hours}:${minutes}`;
-}
+};
+
+export default FormatDate;

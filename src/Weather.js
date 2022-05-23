@@ -7,7 +7,6 @@ import Forecast from "./Forecast";
 
 const Weather = (props) => {
   const [weatherData, setWeatherData] = useState({ ready: false });
-
   const [city, setCity] = useState(props.defaultCity); /*default is Sydney */
 
   const showWeather = (response) => {

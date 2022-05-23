@@ -7,14 +7,15 @@ const Forecast = (props) => {
   const [ready, setReady] = useState(false);
   const [forecast, setForecast] = useState(null);
 
+  //  setReady to false if coordinates change
   useEffect(() => {
     setReady(false);
   }, [props.coordinates]);
 
-  function showForecast(response) {
+  const showForecast = (response) => {
     setForecast(response.data.daily);
     setReady(true);
-  }
+  };
 
   if (ready) {
     return (

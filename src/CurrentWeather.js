@@ -22,7 +22,7 @@ const CurrentWeather = (props) => {
         <div className="col-4">
           <ul className="CurrentWeather-extraInfo">
             <li>{props.data.description}</li>
-            <li>Humidity:{props.data.humidity}%</li>
+            <li>Humidity: {props.data.humidity}%</li>
             <li>Wind: {props.data.wind} km/h</li>
           </ul>
         </div>

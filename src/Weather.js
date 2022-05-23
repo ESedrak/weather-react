@@ -6,6 +6,7 @@ import CurrentWeather from "./CurrentWeather";
 import Forecast from "./Forecast";
 
 const Weather = (props) => {
+  /*Initial load of page is false */
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity); /*default is Sydney */
 

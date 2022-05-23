@@ -3,7 +3,7 @@ import "./Forecast.css";
 import axios from "axios";
 import ForecastData from "./ForecastData";
 
-export default function Forecast(props) {
+const Forecast = (props) => {
   const [ready, setReady] = useState(false);
   const [forecast, setForecast] = useState(null);
 
@@ -44,4 +44,6 @@ export default function Forecast(props) {
 
     return null;
   }
-}
+};
+
+export default Forecast;

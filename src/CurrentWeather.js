@@ -6,7 +6,7 @@ import "./CurrentWeather.css";
 const CurrentWeather = (props) => {
   return (
     <div className="CurrentWeather">
-      <h1> {props.data.city}</h1>
+      <h1 className="CurrentWeather-city"> {props.data.city}</h1>
       <div className="row">
         <div className="col-3">
           <WeatherIcon code={props.data.icon} size={80} />

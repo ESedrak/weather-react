@@ -2,3 +2,14 @@
   text-align: center;
   font-size: 10px;
 }
+
+/* Links */
+.Footer-link {
+  text-decoration: none;
+  color: rgb(247, 206, 230);
+}
+
+.Footer-link:hover {
+  color: white;
+  text-decoration: none;
+}

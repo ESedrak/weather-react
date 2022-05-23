@@ -1,3 +1,9 @@
+.CurrentWeather-city {
+  font-size: 50px;
+  text-align: center;
+  line-height: 60px;
+}
+
 .CurrentWeather-todayTemperatureUnits {
   text-align: center;
   position: relative;
@@ -12,6 +18,10 @@
   opacity: 0.8;
   font-size: 15px;
   text-transform: capitalize;
+  list-style: none;
+  font-size: 10px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .CurrentWeather-time {

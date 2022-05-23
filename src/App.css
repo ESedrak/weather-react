@@ -1,31 +1,5 @@
-a {
-  text-decoration: none;
-  color: rgb(247, 206, 230);
-}
-
 body {
   background-color: rgb(0, 0, 0);
   color: rgb(247, 222, 236);
   font-family: Arial, Helvetica, sans-serif;
-}
-
-h1 {
-  font-size: 50px;
-  text-align: center;
-  line-height: 60px;
-}
-
-h2 {
-  text-align: center;
-  padding: 20px 0px 80px;
-}
-
-li {
-  list-style: none;
-  font-size: 10px;
-}
-
-ul {
-  margin: 0px;
-  padding: 0px;
 }

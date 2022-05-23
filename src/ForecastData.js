@@ -6,12 +6,13 @@ const ForecastData = (props) => {
     const minTemp = Math.round(props.data.temp.min);
     return `${minTemp}°`;
   };
+
   const maxTemperature = () => {
     const maxTemp = Math.round(props.data.temp.max);
     return `${maxTemp}°`;
   };
 
-  const day = () => {
+  const forecastDay = () => {
     const date = new Date(props.data.dt * 1000);
 
     const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -22,11 +23,11 @@ const ForecastData = (props) => {
 
   return (
     <div>
-      <div className="Forecast-day">{day()}</div>
+      <div className="Forecast-day">{forecastDay()}</div>
       <WeatherIcon code={props.data.weather[0].icon} size={30} />
       <div className="Forecast-temperatures">
-        <span className="Forecast-temperature-min">{minTemperature()} </span>
-        <span className="Forecast-temperature-max">{maxTemperature()}</span>
+        <div className="Forecast-temperature-min">{minTemperature()} </div>
+        <div className="Forecast-temperature-max">{maxTemperature()}</div>
       </div>
     </div>
   );
